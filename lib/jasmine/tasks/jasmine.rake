@@ -5,9 +5,9 @@ namespace :jasmine do
 
   task :require_json do
     begin
-      require 'json'
+      require 'multi_json'
     rescue LoadError
-      puts "You must have a JSON library installed to run jasmine:ci. Try \"gem install json\""
+      puts "You must have a JSON library installed to run jasmine:ci. Try \"gem install multi_json\""
       exit
     end
   end

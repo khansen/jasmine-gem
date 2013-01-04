@@ -64,7 +64,7 @@ Gem::Specification.new do |s|
   end
 
   s.add_development_dependency 'rack-test'
-  s.add_development_dependency 'json_pure'
+  s.add_development_dependency 'multi_json'
   s.add_development_dependency 'nokogiri'
 
   s.add_dependency 'jasmine-core', "~> 1.3.1"
