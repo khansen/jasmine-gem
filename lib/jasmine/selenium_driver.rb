@@ -1,5 +1,5 @@
 module Jasmine
-  require 'json'
+  require 'multi_json'
   class SeleniumDriver
     def initialize(browser, http_address)
       require 'selenium-webdriver'
@@ -32,11 +32,11 @@ module Jasmine
 
     def eval_js(script)
       result = @driver.execute_script(script)
-      JSON.parse("{\"result\":#{result}}", :max_nesting => false)["result"]
+      MultiJson.load("{\"result\":#{result}}", :max_nesting => false)["result"]
     end
 
     def json_generate(obj)
-      JSON.generate(obj)
+      MultiJson.dump(obj)
     end
   end
 end
