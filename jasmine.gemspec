@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "jasmine/version"
 
 Gem::Specification.new do |s|
-  s.name               = %q{jasmine}
+  s.name               = %q{jasmine-multi_json}
   s.version            = Jasmine::VERSION
   s.platform           = Gem::Platform::RUBY
 
